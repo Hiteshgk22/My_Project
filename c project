@@ -1,0 +1,26 @@
+#include <stdio.h> // Includes the standard input-output library
+
+// Function to calculate factorial
+unsigned int factorial(unsigned int N) {
+int fact = 1; // Initialize the result variable to 1
+int i; // Loop variable
+
+// Loop from 1 to N to calculate factorial
+for (i = 1; i <= N; i++) {
+fact *= i; // Multiply fact by the current value of i
+}
+
+return fact; // Return the calculated factorial
+}
+
+int main() {
+int N = 5; // Input number for which factorial is to be calculated
+
+// Call the factorial function and store the result
+int fact = factorial(N);
+
+// Print the result
+printf("Factorial of %d is %d", N, fact);
+
+return 0; // Exit the program
+}
